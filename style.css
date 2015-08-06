@@ -1,0 +1,52 @@
+.wrapper{
+    width: 300px;
+    height: 100px;
+    border: 2px solid gold;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.block {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    -webkit-animation: example 12s infinite; /* Chrome, Safari, Opera */
+    animation: example 12s infinite;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+}
+
+.blue a{
+    color: gold;
+    text-decoration: none;
+}
+
+.red{
+    background-color: red;
+}
+
+
+h3{
+    position: relative;
+    top: -50px;
+    left: 80px;
+    vertical-align: text-top;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {right:0px; top:0px;}
+    25%  {right:300px; top:0px;}
+    50%  {right:600px; top:0px;}
+    75%  {right:300px; top:0px;}
+    100% {right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {right:0px; top:0px;}
+    25%  {right:300px; top:0px;}
+    50%  {right:600px; top:0px;}
+    75%  {right:300px; top:0px;}
+    100% {right:0px; top:0px;}
+}
